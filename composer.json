@@ -1,0 +1,25 @@
+{
+    "name": "aminkt/yii2-tree-view-widget",
+    "description": "Tree view widget",
+    "keywords": ["yii", "tree", "view", "widget", "tree view"],
+    "type": "yii2-extension",
+    "support": {
+    	"source": "https://gitlab.com/aminkt/yii2-tree-view-widget"
+    },
+    "authors": [
+    	{
+    		"name": "Amin Keshavarz",
+    		"email": "ak_1596@yahoo.com"
+    	}
+    ],
+    "require": {
+        "yiisoft/yii2": ">=2.0.11"
+    },
+    "autoload": {
+    	"psr-4": {
+    		"aminkt\\widgets\\tree\\": ""
+    	}
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
