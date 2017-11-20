@@ -1,0 +1,73 @@
+
+/* ========================================================================
+ * 7.13 Tree Menu
+ * ======================================================================== */
+
+
+.tree { min-height: 20px; }
+
+.tree li span a { color: #555 }
+
+.tree li {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0 5px 5px;
+    position: relative
+}
+
+.tree li::before,
+.tree li::after {
+    content: "";
+    right: -20px;
+    position: absolute;
+    left: auto
+}
+
+.tree li::before {
+    border-right: 2px solid #c0c2c7;
+    bottom: 50px;
+    height: 100%;
+    top: 0;
+    width: 1px
+}
+
+.tree li::after {
+    border-top: 2px solid #c0c2c7;
+    height: 20px;
+    top: 30px;
+    width: 20px
+}
+
+.tree li span {
+    border: 2px solid #c0c2c7;
+    border-radius: 5px;
+    font-size: 0.9em;
+    display: inline-block;
+    padding: 5px 8px;
+    margin-top: 8px;
+    text-decoration: none
+}
+
+.tree li .label.label-danger { border: 2px solid #d24d33; }
+
+.tree li .label.label-info { border: 2px solid #5bc0de; }
+
+.tree li .label.label-warning { border: 2px solid #f0ad4e; }
+
+.tree li .label.label-default { border: 2px solid #999; }
+
+.tree li .label.label-success { border: 2px solid #82b964; }
+
+.tree li.parent_li > span { cursor: pointer }
+
+.tree > ul > li::before,
+.tree > ul > li:after { border: 0 }
+
+.tree li:last-child::before { height: 30px }
+
+.tree li.parent_li > span:hover,
+.tree li.parent_li > span:hover + ul li span {
+    background: #969fa1;
+    border: 2px solid #969fa1;
+    color: #fff
+}
