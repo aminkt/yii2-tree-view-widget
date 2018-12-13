@@ -4,7 +4,7 @@
     "keywords": ["yii", "tree", "view", "widget", "tree view"],
     "type": "yii2-extension",
     "support": {
-    	"source": "https://gitlab.com/aminkt/yii2-tree-view-widget"
+    	"source": "https://github.com/aminkt/yii2-tree-view-widget"
     },
     "authors": [
     	{
